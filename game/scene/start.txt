@@ -1,0 +1,48 @@
+
+changeBg:none;
+intro:您好！|欢迎游玩《恐怖妍妍》|本故事纯属虚构，若有雷同，仅为巧合|本游戏可能有加载不出来画面的情况，无需慌张，一般多试几次就可以加载出来 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:本游戏含有惊悚内容，请谨慎游玩 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+jumpLabel:rfrfr -when=erzhoumu==1;
+label:ginbi;
+jumpLabel:wswsr -when=dcrr==1;
+label:ginbia;
+changeBg:js.jpg;
+setVar:a=0;
+setVar:1221212121=1 -global;
+setVar:aaa;
+setVar:fear=0;
+xxn:6666,人才啊，你们一群人给我叠了18张牌，是真牛逼;
+姜氏小女子:好家伙;
+侯:你自己给你叠了4张是一点不说？;
+苏一:奏是;
+:英语晚自习上，百无聊赖的4个神人开始玩起了纸牌;
+:他们却没注意到;
+changeFigure:妍妍.png -right -transform={"position":{"x":-490,"y":-170},"scale":{"x":0.3,"y":0.3}};
+:妍妍突然走进教室，着实是吓了一跳|你们也火速收了起来;
+妍妍:我们继续讲题，看完形填空第一题......;
+:好催眠啊|不知不觉间，你们悄然进入了梦乡...;
+changeFigure: -right -transform={"position":{"x":200}};
+changeBg:办公室.jpg;
+bgm:Screenrecording_20251219_192329.mp3 -enter=200 -unlockname=342;
+xxn:给我们干哪来了;
+;
+jumpLabel:1234 -when=aaa==1;
+label:123;
+setVar:aaa=1 -global;
+侯:这啥鬼地方啊我靠 -when=1221212121>0;
+setVar:1221212121=1221212121+1 -global;
+姜氏小女子:有点诡异了吧;
+苏一:就是啊;
+侯:这门还被锁上了，打不开我服了;
+:现在这四个人好像都有想法，听谁的呢;
+choose:侯：我觉得得找钥匙:办公室场景/侯.txt|姜：我们在里面找毛钥匙啊，这是锁被弄坏了，撞开吧:办公室场景/成功了.txt|苏：我不知道咋办啊，姜氏小女子感觉挺靠谱的:办公室场景/成功了.txt|谢：拿凳子砸不行吗:办公室场景/谢谢你的计划.txt;
+label:1234;
+:不知怎么滴，你竟觉得很是熟悉...
+:也许你早就来过这里了;
+jumpLabel:123;
+label:rfrfr;
+:是否进入苏一特殊二周目？
+choose:进入:苏一背刺结局二周目/出场.txt|不进入:ginbi;
+label:wswsr;
+:是否进入寄语还是我忘了是啥的东西？
+choose:进入:总结.txt|不进入:ginbia;

@@ -1,0 +1,33 @@
+changeBg:车库.jpg;
+jumpLabel:sh -when=a==1;
+jumpLabel:jx -when=a==2;
+jumpLabel:qy;
+label:sh;
+苏一:我们真的能这么出去吗;
+侯:我觉得应该是行的;
+:希望如此吧;
+jumpLabel:zong;
+label:jx;
+谢谢你:他们真的已经...;
+姜氏小女子:看来应该是的|振作点，等我们出去...;
+jumpLabel:zong;
+label:qy;
+侯:希望我们能活着回去;
+姜氏小女子:希望吧，这里这么诡异;
+jumpLabel:zong;
+label:zong;
+:你们来到了车库,这里几乎没有车，妍妍的大蓝车十分显眼;
+:你们本想跑出车库，但可惜的是有一层墙挡住了去路，不过如果有车的话也许能直接撞出去;
+jumpLabel:suiji -when=chance>5;
+看来你们可能要再回教室和办公室找钥匙了
+changeScene:大选择/广播/再回教师.txt;
+label:suiji;
+:等等，你们的身上貌似有车钥匙;
+:要去启动妍妍的车吗
+choose:去:大选择/广播/kaiche.txt|不去:选择场景文件;
+:你们不去，又能干什么呢;
+:最终，你们在绝望中死去了 -when=fear>=40;
+:最终，妍妍召集了大量阴兵，来追杀你们，你们无路可逃 -when=fear<40;
+:达成结局【万念俱灰】 -when=fear>=40;
+:达成结局【无路可走】 -when=fear<40;
+end;

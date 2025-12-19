@@ -1,0 +1,17 @@
+
+:你们什么也没找到;
+:正当你们往外走时 -when=xr==0
+jumpLabel:edh -when=xr==0;
+:于是，你们又来到了教室去
+:找到了车钥匙
+setVar:chance=chance+5;
+changeScene:大选择/广播/车库.txt;
+label:edh;
+changeFigure:妍妍.png;
+changeFigure:pg.png -right;
+changeFigure:dwf.png -left;
+:妍妍的怒火燃烧起来，你们炽热难耐
+:没有被削弱的妍妍召唤出了所有3²年级的统治阶级
+:你们难逃一死
+:达成结局【这不纯纯急眼了吗】
+end;

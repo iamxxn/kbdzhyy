@@ -1,0 +1,7 @@
+
+changeBg:教室.jpg;
+:你们跑去了教室 -when=xr==1;
+:你们趁机跑向了教室 -when=xr==0;
+:妍妍的怒火使你们难待 -when=xr==0;
+:现在是要去教室搜还是办公室搜;
+choose:去教室:大选择/广播/dierciqujiaoshi.txt|办公室:大选择/广播/zaiqubangongshi.txt;

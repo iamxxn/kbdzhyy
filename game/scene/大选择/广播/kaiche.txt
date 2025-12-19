@@ -1,0 +1,17 @@
+:你们进入了妍妍的车;
+:而谁来驾驶就成为了一个很大的问题;
+:经过激烈的斗争，你们决定让苏一驾驶 -when=a==1;
+:经过激烈的斗争，你们决定让谢谢你来驾驶 -when=a==2;
+setVar:fyv=random(1,10) -when=a==0;
+:经过激烈的斗争，你们决定让侯来驾驶 -when=fyv<=5;
+:经过激烈的斗争，你们决定让姜氏小女子驾驶 -when=fyv>5;
+jumpLabel:bed;
+label:bed;
+:即使如此，你们也只不过是一个学生罢了，又怎么可能真的会开车呢;
+:（成功几率为基础概率为2/3.恐惧值上升会减少成功驱动的概率，现在恐惧值为{fear}）;
+:不是你们怎么恐惧值都能到负数啊，真那么胆大吗 -when=fear<0;
+setVar:cgjl=random(1,150-fear)
+setVar:cg=1 -when=cgjl<=50;
+setVar:cg=0 -when=cgjl>50;
+changeScene:大选择/广播/ck.txt -when=cg==0;
+changeScene:大选择/广播/shibai.txt -when=cg==1;

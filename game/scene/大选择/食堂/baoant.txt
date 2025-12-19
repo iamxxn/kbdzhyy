@@ -1,0 +1,69 @@
+;记得给膀胱加上鉴赏模式！！！！！！！！！！！！！！！！！！！！！！！！！！！
+changeBg: 选择背景图片;
+:你们来到了保安厅，这里没有人，你们很容容易就找到了大门钥匙;
+:正当你们开完门准备跑路时，一阵诡异的铃声响起，你们被妍妍控制着向食堂走去;
+changeBg:食堂.jpg;
+changeFigure:妍妍.png -transform={"oldFilm":1} -duration=0;
+changeFigure:dwf.png -left;
+changeFigure:pg.png -right;
+:一到食堂，妍妍解除了对你们的控制，看来也是风中残烛了;
+:注：本个选择所有都对，存在四个彩蛋，每个彩蛋的概率是十分之一，也就是同时存在四个彩蛋的概率为万分之一;
+setVar:kuli=random(1,10);
+setVar:liku=random(1,10);
+setVar:libiao=random(1,10);
+setVar:biaoli=random(1,10);
+choose:(kuli>9)[kuli>9]->侯：我还有一计（彩蛋）:hanhuang|侯：我有一计:zhongse|(liku>9)[liku>9]->侯：我还还有一计（彩蛋）:siqing|(libiao>9)[libiao>9]->谢：我有一计（彩蛋）:guoo|苏：我有一计:yuyu|(biaoli>9)[biaoli>9]->谢：我还有一计（彩蛋）:duonian;
+label:hanhuang;
+:只见侯径直朝向方位走过去，霎时间，天旋地转，往日的情景也浮现出来
+:方位：他为什么之跟你说话不找别人说？
+:侯：他管我同桌借笔记，让我说下....
+:侯的愤怒击退了他们，干得好！
+setVar:fear=fear-10;
+changeScene:大选择/食堂/paolule.txt;
+label:zhongse;
+:只见侯直接拉着我们往外跑，你们也是震惊了，即使你们跟着跑，恐惧也在你们之中围绕...
+setVar:fear=fear+10;
+changeScene:大选择/食堂/paolule.txt;
+label:siqing;
+:只见侯英勇得向前走去，来到膀胱对面
+:侯：我们的往日，你都不记得了吗
+:膀胱可见的诧异了一下，回忆了起来
+:回忆内容见前作
+:他们都被击退了，干得好
+unlockCg:3c85e9f917a85f871ae3208c2a2aa0bb.png;
+setVar:fear=fear-10;
+unlockCg:;
+changeScene:大选择/食堂/paolule.txt;
+label:guoo;
+:谢谢你两眼聚神，竟召唤出了上古神兽
+changeFigure:6406ff57343fad10b643c11afb4b61e8.png;
+:神兽吓退了妍妍及其仆从
+:干得好！
+:只是这个上古神兽，也搞得众人人心惶惶...
+unlockCg:6406ff57343fad10b643c11afb4b61e8.png;
+setVar:fear=fear+10;
+changeScene:大选择/食堂/paolule.txt;
+label:yuyu;
+:只见苏一眼疾手快，拿起一旁的面粉，向妍妍泼去
+:其他人也是立刻就懂得了苏一的意图，一个去点火，一个去引燃了
+:轰的一声，他们不知是受了伤，还是如何，反正不见了
+:干得好！
+:苏一看向面粉，他若有所思...
+setVar:fear=fear-10;
+changeScene:大选择/食堂/paolule.txt;
+label:duonian;
+:只见谢谢你双目凝神，召唤出了剑神！
+changeFigure:none;
+changeFigure:none -left;
+changeFigure:none -right;
+changeFigure:js.png;
+:剑神出现了;
+changeFigure:j.png -left -transform={"position":{"x":1500,"y":100}};
+:以及他的剑;
+剑神:亚雷阿勒，这种难度还要我出手吗;
+changeFigure:none;
+changeFigure:none -left;
+:剑神回去了;
+:无论如何，剑神极大的增长了士气;
+setVar:fear=fear-10;
+changeScene:大选择/食堂/paolule.txt;

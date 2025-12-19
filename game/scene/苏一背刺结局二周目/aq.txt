@@ -1,0 +1,17 @@
+changeBg:OIP-C.webp;
+苏一:可以，找到了;
+苏一:感觉好多了;
+苏一:看来现在只要跑到大门，就可以逃出去了;
+choose:从操场走:csoc|呃啊啊啊啊（韩信附体）明修栈道，暗度陈仓！！！！:toumozou|回忆一下再做决定:huiyyy;
+label:caoc;
+changeBg:操场.jpg;
+ 姜氏小女子:hello?;
+:达成结局【今日我虽死，却仍是华北霸王！！！】;
+end;
+label:toumozou;
+changeBg:教室.jpg;
+changeBg:07e65d92144ce3ef0a79a87566e2d090.png;
+changeScene:苏一背刺结局二周目/4354.txt;
+label:huiyyy;
+callScene:苏一背刺结局二周目/ht.txt;
+jumpLabel:toumozou;

@@ -1,0 +1,21 @@
+;a的变量来控制人数的增减，1为侯苏存活，2为姜谢存活，（如果有的话3为苏活，4为侯，5为姜氏小女子，6为我）
+changeBg:教室.jpg -unlockname=黑暗的教室;
+unlockCg:教室.jpg;
+setAnimation:blur;
+filmMode:on;
+:鬼使神差的，你们让侯苏一起去了;
+:果不其然，他们听的时候像听天书一样，完全不知道在说啥;
+changeFigure:妍妍.png -transform={"scale":{"x":2,"y":2},"colorRed":237,"colorGreen":28,"colorBlue":28,"oldFilm":1};
+changeFigure:none;
+changeBg:广播室.jpg;
+setVar:fear=fear+30;
+姜氏小女子:什么情况？;
+谢谢你:我觉得恐怕他们已经...;
+:他们二人对望，谁都没有再往后说;
+姜:那我们该咋办;
+谢:不要慌，我记得以前和其他人聊天时，他提到车库是与外面相连的，我们可以通过那里逃跑;
+姜氏小女子:看起来我们也只有这一个方法了;
+谢:一路走好...;
+setVar:a=2;
+filmMode:none;
+changeScene:大选择/广播/车库.txt;

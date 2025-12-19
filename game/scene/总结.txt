@@ -1,0 +1,8 @@
+
+intro:感谢游玩《恐怖妍妍》 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:本游戏有20+7个结局|如果我没记错，应该是有四个cg，2个音频 -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500 -fontSize=medium;
+intro:还有比较好的结局|SSS：心头之结|SS：不思量   自难忘|S：落花时节又逢君（1和2） 楚汉相争 破镜重圆|z中z，拉中拉：割席断义|其他的我估计就不知道了 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:特别鸣谢：|谢谢你 苏一 侯 姜氏小女子|曹某人 秦始皇 冯·诺伊曼 大禹 商汤|我的电脑 我的手 我的脑子 制作电脑的工人 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:鼠标 鼠标电池（牺牲了两个） 键盘|妍妍 方位 膀胱 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+intro:感谢游玩！ -fontSize=large -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=1500;
+end;

@@ -1,0 +1,63 @@
+changeBg:js.jpg;
+unlockBgm:1111.mp3;
+同桌:哥们你醒醒，欸|你咋这都睡着了;
+setVar:dcrr=1 -global;
+:你们四个左看看右看看，确认你们刚才切实经历了那些 -when=a==0;
+:你们两个左看看右看看，确认你们刚才确实经历了那些 -when=a==1;
+:你们两个左看看右看看，确认你们刚才确实经历了那些 -when=a==2;
+:英语课也算是彻底听不进去了，内心只剩紧张与焦虑
+:下课后你们急躁得聚集到一块，诉说着
+jumpLabel:qwqw -when=a==1;
+jumpLabel:wwww -when=a==2;
+jumpLabel:zzzz -when=a==0;
+label:qwqw;
+苏一:谢谢你和姜氏小女子呢，我刚刚问同学，他们谁也不知道谢谢你和姜氏小女子啊;
+侯:那，恐怕就是他们真的永远不在了;
+:多年后，你毕业了，也找了一份很体面的工作，只是在夜深人静之时，你也不禁会想起他们俩;
+:一日，你入睡后;
+谢谢你&姜氏小女子:你们，还好吗？;
+:达成结局【落花时节又逢君】;
+:等等，你们貌似还有神器？ -when=dvjd=1;
+:一日，你在翻你初中的照片时 -when=dvjd=1;
+:突然找到了多年前，那次惊魂的晚上，探索中不知为何带出来的神器 -when=dvjd==1;
+:你不仅又想起了那些与你为伴的同学，他们还好吗 -when=djvd==1
+:还有... -when=djvd=1;
+changeFigure:妍妍.png -when=djvd==1
+changeFigure:none -when=djvd==1;
+changeBg:办公室.jpg -when=djvd==1;
+:你们又回到那里|不同的是，你们这次势必要一起回去 -when=djvd==1;
+:达成彩蛋结局【不思量】 -when=djvd==1；
+end;
+label:wwww;
+xxn:苏一和侯呢，我刚刚问同学，他们谁也不知道侯和苏一啊;
+姜氏小女子:那，恐怕就是他们真的永远不在了;
+:多年后，你毕业了，也找了一份很体面的工作，只是在夜深人静之时，你也不禁会想起他们俩;
+:一日，你入睡后;
+苏一&侯:你们，还好吗？;
+:达成结局【落花时节又逢君】2;
+:等等，你们貌似还有神器？ -when=dvjd=1;
+:一日，你在翻你初中的照片时 -when=dvjd=1;
+:突然找到了多年前，那次惊魂的晚上，探索中不知为何带出来的神器 -when=dvjd==1;
+:你不仅又想起了那些与你为伴的同学，他们还好吗 -when=djvd==1
+:还有... -when=djvd=1;
+changeFigure:妍妍.png -when=djvd==1
+changeFigure:none -when=djvd==1;
+changeBg:办公室.jpg -when=djvd==1;
+:你们又回到那里|不同的是，你们这次势必要一起回去 -when=djvd==1;
+:达成彩蛋结局【自难忘】 -when=djvd==1；
+end;
+label:zzzz;
+:你们四个人打算把这个秘密隐藏，不予任何人说
+:只是夜里时常想起也总感觉心有余悸...;
+:达成结局【心头之结】（这个是好结局啊，哪个选项都没有知道真相啊）;
+:等等，你们貌似还有神器？ -when=dvjd=1;
+:一日，你在翻你初中的照片时 -when=dvjd=1;
+:突然找到了多年前，那次惊魂的晚上，探索中不知为何带出来的神器 -when=dvjd==1;
+:你不仅又想起了那些与你为伴的同学，他们还好吗 -when=djvd==1
+:还有... -when=djvd=1;
+changeFigure:妍妍.png -when=djvd==1
+changeFigure:none -when=djvd==1;
+changeBg:办公室.jpg -when=djvd==1;
+:你们又回到那里|不同的是，你们配合更加默契 -when=djvd==1;
+:达成彩蛋结局【二周目开挂是吧】 -when=djvd==1；
+end;

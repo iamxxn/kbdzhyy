@@ -1,0 +1,10 @@
+Game_name:恐怖妍妍;
+Game_key:48a1d5e32618ab;
+Title_img:bdhm.jpg;
+Title_bgm:Screenrecording_20251219_192702.mp3;
+Textbox_theme:imss;
+Enable_Appreciation:true;
+Show_panic:true;
+Description:简介写点啥呢，不知道啊;
+Package_name:这个游戏包名是啥？;
+Game_Logo:js.jpg|教室.jpg;

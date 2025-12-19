@@ -1,0 +1,24 @@
+:你们直接撞开了办公室的门，没有吸引妍妍;
+:你们决定先在教室呆着，看能不能找到点啥;
+changeBg:教室.jpg;
+苏一:吓死我了，现在几点了;
+姜氏小女子:等会，这里怎么会没时间？;
+侯·:我们不会进入什么平行世界吧;
+setVar:fear=fear+10;
+谢谢你:看起来，好像是的。。;
+谢谢你:算了，先去搜点东西吧，既然是平行世界，但也不会有啥心理压力;
+其他:我觉得可以;
+苏一:等下，那个20是什么意思;
+姜氏小女子:可能是还有20分钟？;
+侯:没准是吧;
+:在十五分钟的搜寻后|你们找到了一些食物和其他的，虽然不确定能不能吃，但先拿着吧;
+:这时，你们听到了诡异的一声，向外一看，显然是一个诡异了一万倍的妍妍;
+changeFigure:妍妍.png;
+苏一:别说话;
+setVar:fear=fear+10;
+changeFigure:none;
+侯:看来她走了;
+intro:去他熟悉的地方化解他的怨念|在平息之前，你将无法正常离开学校 -fontSize=medium -backgroundColor=rgba(0, 0, 0, 1) -fontColor=rgba(255, 255, 255, 1) -animation=fadeIn -delayTime=150o;
+setVar:chance=random(1,10)
+changeScene:办公室场景/小点.txt -when=chance<=5;
+changeScene:办公室场景/小点2.txt -when=chance>5;

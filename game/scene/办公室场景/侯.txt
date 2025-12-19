@@ -1,0 +1,14 @@
+:你们四个听从侯的建议，去找钥匙了;
+:......;
+:你们浪费了太多时间了;
+changeFigure:妍妍.png;
+:？;
+changeFigure:none;
+changeFigure:妍妍.png -transform={"position":{"y":1000},"scale":{"x":3,"y":3}};
+:？？？;
+changeFigure:none;
+:！！！;
+changeFigure:妍妍.png -transform={"position":{"y":2200},"scale":{"x":5,"y":5}};
+:全员死亡;
+:达成结局【真的钥匙了】;
+end;

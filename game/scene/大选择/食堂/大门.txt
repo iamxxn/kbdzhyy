@@ -1,0 +1,24 @@
+changeBg:07e65d92144ce3ef0a79a87566e2d090.png;
+:额，有时候我就在想，你们身在广播室，明明偷偷过去就到车库了 -when=tianzhizi==1;
+:为什么非要来大门 -when=tianzhizi==1;
+:你们为你们的选择不寒而栗，内置变量恐惧值随机添加 -when=tianzhizi==1;
+setVar:suiji=random(25,50)
+setVar:fear=fear+suiji -when=tianzhizi==1;
+:你们来到了大门;
+:可惜的是，你们没有大门钥匙;
+:看来要去找钥匙了;
+choose:回食堂:huishitang|去保安厅:大选择/食堂/baoant.txt|去教室:大选择/广播/再回教师.txt|翻墙就完了:fanqiang;
+label:fanqiang;
+:你们的大脑飞速运转|居然想到了翻墙跑路的方法;
+:说干就干，你们立马往墙上翻;
+:你们忘了，墙上是有电网的啊....|为什么在这里他是通电的...;
+:达成结局【大意失生命】;
+end;
+label:huishitang;
+changeBg:食堂.jpg;
+:你们回到了食堂
+:你们回来干啥啊说白了
+:有用吗？
+:毫不意外的，你们被即使被削弱的妍妍干掉了
+:达成结局【人才】
+end;

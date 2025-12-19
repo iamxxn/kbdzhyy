@@ -1,0 +1,34 @@
+
+:嗯，你换了;
+:本来按理来说这里应该选项挺多的，算了我少写点吧;
+label:wdev
+choose:苏谢:ke|侯姜:ke|苏加谢加侯:dachengg|全军出击:buke|苏加姜加侯:dachengg|谢加姜加侯:dachengg2;
+label:ke;
+:十分的不错，你们操作流畅，一气呵成，直接给妍妍吃美了
+:真有你的！
+setVar:fear=fear-10;
+setVar:xr=1;
+changeScene:大选择/食堂/cg.txt;
+label:dachengg
+:苏一这个天才少年，居然做出了苹果派 -when=chance<=5;
+setVar:fear=fear-10 -when=chance<=5;
+:真有你的!!! -when=chance<=5;
+jumpLabel:ke -when=chance<=5;
+jumpLabel:buke -when=chance>5;
+label:dachengg2;
+:十分的不错，你们竟神奇的做出了巧克力蛋糕 -when=chance<=5;
+setVar:fear=fear-10 -when=chance>5;
+:天才！ -when=chance<=5;
+jumpLabel:ke -when=chance<=5
+jumpLabel:buke -when=chance>5
+label:buke;
+:嗯
+:你们一群人忙乎半天不知道在忙啥
+:天才！
+:周围更加阴森了...
+setVar:fear=fear+10;
+setVar:cishu=cishu-1;
+jumpLabel:wdev -when=cishu>0;
+:黑影向你们袭来...
+:达成结局【确实恐怖的】
+end;

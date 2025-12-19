@@ -1,0 +1,40 @@
+
+changeFigure:none;
+changeFigure:none -left;
+changeFigure:none -right;
+:你们奋力跑向大门;
+changeBg:操场.jpg;
+changeBg:07e65d92144ce3ef0a79a87566e2d090.png;
+:就快到了...;
+setVar:dcrr=1 -global;
+jumpLabel:beici -when=fear>20;
+:你们最后都跑出了大门
+:你们出去后，回首望去，刚刚的学校似乎也不再阴森了
+changeBg:js.jpg;
+changeFigure:妍妍.png -right -transform={"position":{"x":-490,"y":-170},"scale":{"x":0.3,"y":0.3}};
+:你们很多眼互相望去，这才印证了刚才的是真正发生过的;
+:下课后你们也来不及谈别的了;
+:你们四个人打算把这个秘密隐藏，不予任何人说
+:只是夜里时常想起也总感觉心有余悸...;
+:达成结局【秦晋之好】
+end;
+label:beici;
+filmMode:on;
+hou:啊;
+角色名，留空以继承上句:你，你在干什么，你为什么要踹我们;
+:为什么你要这样;
+角色名，留空以继承上句:苏一眼里闪过冷冷的光，甚至都没回头看眼;
+:萧瑟的阴风吹过，三人再无动静;
+filmMode:none;
+changeBg:js.jpg;
+:穿过学校大门后，苏一梦醒，回到教室，环顾四周，没有三人的踪迹;
+:他悔吗，可能有些。只是，他活下去的愿望太过强烈了;
+:达成结局【楚汉相争】;
+:提示：内置变量恐惧值过高，在前面的选项中试着改变
+:等等，还没完;
+:在几日后的苏一家里，苏一正欢快地玩着手机，突然苏一面目狰狞，三个黑影闪过，一会后苏一发现...;
+changeBg:123.webp;
+:他回到了那个诡异的学校，报告厅内闪着诡异的光;
+:（恭喜解锁二周目苏一逃脱线）;
+setVar:erzhoumu=1 -global;
+end;

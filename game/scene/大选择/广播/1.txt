@@ -1,0 +1,27 @@
+
+changeBg:广播室.jpg;
+:你们来到了广播室;
+setVar:fear=fear-10;
+setVar:a=0;
+:片刻的安全让你得以稍放松，请你选择放松方式;
+setVar:zuy=random(1,20)
+choose:(zuy<5)[zuy<5]->发疯:fafeng|谈谈话:th|用先前搜到的东西:sy;
+label:cut;
+:为了化解妍妍的怨念，你们打算播放英语听力来化解，之前考试时的资料和试卷还在，可惜的是你们早忘了答案了;
+:现在需要去调试设备，你是要让姜氏小女子和谢谢你去门外看守还是四人一同研究呢？;
+choose:让姜谢去外面看守:大选择/广播/单线.txt|都留在这:大选择/广播/全员.txt;
+label:fafeng;
+:你们疯了，差点笑死;
+:神奇的是，你们没有招来妍妍
+setVar:fear=0;
+jumpLabel:cut;
+label:th;
+:你们谈了谈自己的大志，但现在连生存都难还有什么意义呢；
+:更烦躁了...;
+setVar:fear=fear+10;
+jumpLabel:cut;
+label:sy;
+:你们把那些东西吃了，味道很不错 -when=chance<=5;
+:你们看了看钥匙，相信一定会有用的 -when=chance>5;
+setVar:fear=fear-10;
+jumpLabel:cut;

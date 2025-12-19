@@ -1,0 +1,35 @@
+
+changeBg:食堂.jpg;
+:你们来到了食堂;
+:你们环顾四周，四面无人，静的可怕;
+:突然，食堂里面突然出现了一大批人;
+:最吸引你们目光的还是妍妍
+:这些人的脸上都散发出了无色的光;
+:诡异，十分诡异;
+:不过他们没有对你们做什么，冥冥之中你感到了他们应该暂时不会做些什么;
+:你们来到了后厨|额，你觉得我们厨艺能有多好;
+:不管了，先试试吧;
+setVar:cishu=3;
+jumpLabel:changshizhong;
+label:unyt;
+:你们打算只让一个人去做饭
+setVar:fear=fear+10;
+:果不其然一塌糊涂
+setVar:cishu=cishu-1;
+:周围更加阴森了...
+:没事，再来 -when=cishu>=1;
+:看起来，你们没有机会了 -when=cishu==0
+:恐惧吞噬了你们 -when=cishu==0
+:达成结局【确实恐怖的】 -when=cishu==0
+jumpLabel:endd -when=cishu==0;
+label:changshizhong;
+:来试吧
+choose:谢谢你:unyt|苏一:stynb|姜氏小女子:unyt|侯:unyt|都不妥，换:大选择/食堂/huan.txt;
+label:stynb;
+:好样的，苏一
+:苏一直接凭借他优秀的手感做出了美味的富德
+:妍妍直接被削弱了
+setVar:xr=1;
+changeScene:大选择/食堂/cg.txt;
+label:endd;
+end;
